@@ -12,9 +12,9 @@ export const Area: React.FC = () => {
         if (inputToConvert) {
             setResult(
                 eval(
-                    `(${inputToConvert} * ${toMeter[firstUnit]} * ${
+                    `${inputToConvert} * ${toMeter[firstUnit]} ** 2 * ${
                         1 / toMeter[secondUnit]
-                    }) ** 2`
+                    } ** 2`
                 )
             );
         } else {

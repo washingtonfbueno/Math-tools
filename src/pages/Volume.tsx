@@ -12,9 +12,9 @@ export const Volume: React.FC = () => {
         if (inputToConvert) {
             setResult(
                 eval(
-                    `(${inputToConvert} * ${toMeter[firstUnit]} * ${
+                    `${inputToConvert} * ${toMeter[firstUnit]} ** 3 * ${
                         1 / toMeter[secondUnit]
-                    }) ** 3`
+                    } ** 3`
                 )
             );
         } else {
