@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { toMeter } from "../UnitConvert";
 import { Input } from "./Input";
 
-export const Volume = () => {
+export const Volume: React.FC = () => {
     const [inputToConvert, setInputToConvert] = useState("");
     const [result, setResult] = useState("");
     const [firstUnit, setFirstUnit] = useState("Meter");
