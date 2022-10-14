@@ -16,11 +16,7 @@ export const Input: React.FC<Props> = ({
     result,
 }) => {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-        if (
-            e.target.value.match(
-                /^$|^[0]$|^[0][.]$|^[0][.]\d+$|^[1-9]\d*$|^[1-9]+\d*[.]$|^[1-9]+\d*[.]\d+$/
-            )
-        ) {
+        if (e.target.value.match(/^(0|[1-9]\d*)(\.\d*)?$|^$/)) {
             setInputToConvert(e.target.value);
         }
     };
