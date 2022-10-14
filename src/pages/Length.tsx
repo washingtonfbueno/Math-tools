@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { toMeter } from "../UnitConvert";
-import { Input } from "./Input";
+import { Input } from "../components/Input";
 
 export const Length: React.FC = () => {
     const [inputToConvert, setInputToConvert] = useState("");

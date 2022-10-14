@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { toGramForce } from "../UnitConvert";
 
-import { Input } from "./Input";
+import { Input } from "../components/Input";
 
 export const Force = () => {
     const [inputToConvert, setInputToConvert] = useState("");
